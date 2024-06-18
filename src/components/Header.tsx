@@ -32,7 +32,7 @@ export default function Header() {
 
         if(Object.values(searchFilters).includes('')) {
             showNotification({
-                text: 'Todos los campos son obligatorios',
+                text: 'All fields are required',
                 error: true
             })
             return
@@ -79,7 +79,7 @@ export default function Header() {
                                 type='text'
                                 name='ingredient'
                                 className='p-3 w-full rounded-lg focus:outline-none'
-                                placeholder='Name or Ingredient. Ex. Vodka, Tekila, Cofee'
+                                placeholder='Name or Ingredient. Ex. Vodka, Tekila, Coffee'
                                 onChange={handleChange}
                                 value={searchFilters.ingredient}
                             />
